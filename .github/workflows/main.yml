@@ -18,6 +18,8 @@ jobs:
         python-version: '3.11' # Chọn phiên bản Python của bạn
     - name: Install dependencies
       run: python -m pip install --upgrade pip
+    - name: install tele
+      run: python pip install telebot
        
     - name: Run bot_tele3.py
       run: python bottele3.py
