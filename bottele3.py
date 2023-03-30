@@ -7,19 +7,19 @@ bot = telebot.TeleBot(API_KEY)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.reply_to(message, "Hello, I am a Telegram bot. Use /help to see what I can do.")
+    bot.reply_to(message, "Chào bạn, tôi có thể giúp gì.")
 
-@bot.message_handler(commands=['help'])
+@bot.message_handler(commands=['Trợ giúp'])
 def help(message):
-    bot.reply_to(message, "I support the following commands: \n /start \n /info \n /help \n /status \n /news <2>: tin tức <số bài viết>")
+    bot.reply_to(message, "Tôi hỗ trợ bạn theo các lệnh sau: \n /start \n /info \n /Trợ giúp: \n /status \n /news <2>: tin tức <số bài viết>")
 
 @bot.message_handler(commands=['info'])
 def info(message):
-    bot.reply_to(message, "I am a simple Telegram bot created using the python-telegram-bot library.")
+    bot.reply_to(message, "Tôi là 1 robot thông tin, tạo bởi Phòng Công nghiệp, sở KHĐT Điện Biên.")
 
 @bot.message_handler(commands=['status'])
 def status(message):
-    bot.reply_to(message, "I am up and running.")
+    bot.reply_to(message, "Tôi đang sẵn sàng.")
     
 #---------Tin tức
 def laytin():
