@@ -1,0 +1,14 @@
+name: Run Python script
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run Python script
+      run: python bot tele3.py
