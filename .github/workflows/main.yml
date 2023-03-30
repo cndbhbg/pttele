@@ -15,10 +15,10 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x' # Chọn phiên bản Python của bạn
+        python-version: '3.11' # Chọn phiên bản Python của bạn
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt # Nếu bạn có các dependencies
+       
     - name: Run bot_tele3.py
       run: python bot_tele3.py
